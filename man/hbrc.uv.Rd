@@ -24,7 +24,7 @@ hbrc.uv(lcm, chm, ccutoff = 1.6, uvi, sza, resc = NA, ltb, skc = "CLR")
 \item{skc}{Sky condition (cloudiness), either as SpatRaster or single value.}
 }
 \value{
-A SpatRaster stack including two layers. First is the total shade. Second is
+A SpatRaster stack including four layers. First is the UV exposure below the canopy. Second is the UV exposure across the area. Third is UVPF below canopy. Fourth is UVPF across the area.
 }
 \description{
 This function models UV protection provided by the tree canopy.

@@ -11,7 +11,7 @@ hbrc.runoff.e1(lcm, stm, slo, ltb)
 
 \item{stm}{Soil type map in three broad classes indicating 1 = high infiltration, 2 = mid infiltration, 3 = low infiltration.}
 
-\item{slo}{Slope map in units of % slope.}
+\item{slo}{Slope map in units of percentage slope.}
 
 \item{ltb}{Lookup table as matrix with four columns. First column must include all categories of land cover included in lcm. The remaining three columns must give curve numbers for high, mid, and low infiltration soils respectively.}
 }
