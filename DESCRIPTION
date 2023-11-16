@@ -1,0 +1,20 @@
+Package: hbrc
+Type: Package
+Title: Functions developed under LiDAR tools partnership project.
+Version: 0.2.0
+Author: Dan Richards
+Maintainer: Dan Richards <richardsd@landcareresea.rch.co.nz>
+Description: Functions to model ecosystem service indicators in Hawkes Bay.
+    Designed to work with outputs of LiDAR fused with national datasets.
+    Resulting from sub-project 6. Quantifying ecosystem services (seed funding).
+License: CC BY-NC 4.0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Imports:
+	terra,
+	whitebox,
+	insol,
+	rayshader
+Depends: 
+    R (>= 2.10)
