@@ -1,5 +1,5 @@
 
-# hbrc
+# hbrc: Quantifying ecosystem services
 
 <!-- badges: start -->
 <!-- badges: end -->
