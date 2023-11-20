@@ -10,13 +10,16 @@
 #' @export
 
 # Write function
-# ltb <- eslookup[,c(2,7,8,9,10)]
-#treeheight=trees$height
+# ltb <- hb.eslookup[,c(2,7,8,9,10)]
+#treeheight=hb.trees$height
 hbrc.tree.c <- function(trees,
                         treeheight,
                         treedbh = NA,
                         method,
                         maxheight = Inf){
+
+  # Trim maxheight
+  treeheight[treeheight > maxheight]<- maxheight
 
   # If DBH is not provided, estimate it
   # Christchurch street trees provide the relationship
@@ -36,8 +39,6 @@ treedbh2 <- 10^((log10(treeheight)*hdmodel$estimates[2]) +hdmodel$estimates[1])
 
   # Logic checks
 treedbh2[treedbh2 <0]<-0
-treedbh2[treedbh2 >maxheight]<-maxheight
-
 
   if(method=="beets"){
     # Beets general multi-species equation
