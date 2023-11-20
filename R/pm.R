@@ -1,6 +1,6 @@
 #' Modelling of particulate matter air pollution removed by tree cover
 #'
-#' This function models removal of particulate matter air pollution by tree leaves over 24 hours
+#' This function models removal of particulate matter air pollution by tree leaves over 24 hours.
 #' @param lcm Land cover map including vegetation categories.
 #' @param lai Leaf Area Index map.
 #' @param pm10 PM 10 concentration in air, (μg/ m3)

@@ -10,12 +10,12 @@ The authors take no responsibility for the quality and accuracy of the models in
 
 ## Installation
 
-You can install the development version of hbrc like so:
+You can install the development version of hbrc like this:
 
 ``` r
 install.packages("devtools")
 devtools::install_github("manaakiwhenua/hbrc")
 ```
 ## Tutorial
-The hbrc package includes some test datasets from a small region near Wairoa. A more detailed explanation of the functions and the ecosystem service models that underlie them are included in the package [Introduction](https://github.com/manaakiwhenua/hbrc/blob/master/intro-hbrc-v3.pdf). This document also includes some caveats and limitations of the models, references, and an example of quantitatively considering uncertainty when modelling ecosystem services.
+The hbrc package includes some test datasets from a small region near Wairoa. A more detailed explanation of the functions and the ecosystem service models that underlie them is included in the package [Introduction](https://github.com/manaakiwhenua/hbrc/blob/master/intro-hbrc-v3.pdf). This document also includes some caveats and limitations of the models, references, and an example of quantitatively considering uncertainty when modelling ecosystem services.
 

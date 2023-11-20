@@ -21,5 +21,5 @@ hbrc.pm10(lcm, lai, pm10 = 22, Vd = 0.0064, ltb)
 A rast object with two layers. First layer is pm removal per m2. Second layer is actual pm removal per grid cell. Units are kg per day.
 }
 \description{
-This function models removal of particulate matter air pollution by tree leaves over 24 hours
+This function models removal of particulate matter air pollution by tree leaves over 24 hours.
 }
