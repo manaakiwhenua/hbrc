@@ -19,3 +19,18 @@ devtools::install_github("manaakiwhenua/hbrc")
 ## Tutorial
 The hbrc package includes some test datasets from a small region near Wairoa. A more detailed explanation of the functions and the ecosystem service models that underlie them is included in the package [Introduction](https://github.com/manaakiwhenua/hbrc/blob/master/intro-hbrc-v3.pdf). This document also includes some caveats and limitations of the models, references, and an example of quantitatively considering uncertainty when modelling ecosystem services.
 
+## Acknowledgements
+The work was partially supported by the Strategic Science Investment Funding for Crown Research Institutes from the New Zealand Ministry of Business, Innovation and Employment’s Science and Innovation Group. This work was also supported by the Environmental Science section of Hawke's Bay Regional Council via the LiDAR tools partnership project Contract Number HBRC-22-716.
+
+The test datasets included in this package were provided by Jan Schindler. The methods for preparing these data were developed with support from the MBIE Catalyst: Strategic Fund through the programme "Bridging the gap between remote sensing and tree modelling" Contract C09X1923.
+
+## Citation
+Most of the ecosystem services models used in the package can be cited via the original references given in the documentation, and collectively via our study applying ecosystem service models to Mackenzie District;
+
+Richards DR, Herzig A, Abbott A, Ausseil A-G, Guo J, Sood A, Lavorel S (2023). Diverse contributions of nature to climate change adaptation in an upland landscape. Ecosystems and People 19, 2225647.
+
+If you'd like to cite the package itself, something like this would be fine;
+
+Richards DR (2023). hbrc: Functions for estimating ecosystem services indicators using high-resolution spatial datasets. [https://github.com/manaakiwhenua/hbrc ](https://github.com/manaakiwhenua/hbrc)
+
+
