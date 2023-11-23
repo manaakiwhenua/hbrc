@@ -2,9 +2,9 @@
 % Please edit documentation in R/tree-carbon.R
 \name{hbrc.tree.c}
 \alias{hbrc.tree.c}
-\title{Modelling of biomass caron stocks in trees}
+\title{Modelling of biomass carbon stocks in trees}
 \usage{
-hbrc.tree.c(trees, treeheight, treedbh = NA, method, maxheight = Inf)
+hbrc.tree.c(trees, treeheight, treedbh = NA, method = "beets", maxheight = Inf)
 }
 \arguments{
 \item{trees}{Tree locations as a SpatVector.}

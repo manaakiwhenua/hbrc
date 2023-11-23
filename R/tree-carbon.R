@@ -1,4 +1,4 @@
-#' Modelling of biomass caron stocks in trees
+#' Modelling of biomass carbon stocks in trees
 #'
 #' This function models biomass carbon stocks in trees based on allometric equations.
 #' @param trees Tree locations as a SpatVector.
@@ -15,7 +15,7 @@
 hbrc.tree.c <- function(trees,
                         treeheight,
                         treedbh = NA,
-                        method,
+                        method ="beets",
                         maxheight = Inf){
 
   # Trim maxheight
@@ -40,12 +40,15 @@ treedbh2 <- 10^((log10(treeheight)*hdmodel$estimates[2]) +hdmodel$estimates[1])
   # Logic checks
 treedbh2[treedbh2 <0]<-0
 
+treedbh2b<-treedbh2*100
+
   if(method=="beets"){
     # Beets general multi-species equation
-    treedbh3<- treedbh2*100
-    kgc <- (0.0023 * treedbh3^3.3885 +
-                       0.0121 * treedbh3^2.5276 +
-                       0.009 * treedbh3^2.4966)
+    treedbh3<- (treedbh2*100)*treeheight
+    kgc <- (4.83e-5 * treedbh3^0.978 +
+                       1.62e-2 * treedbh3^0.943 +
+                       1.75e-2 * treedbh2b^2.2 +
+              1.71e-2 * treedbh2b^1.75)
   } else if(method == "sm"){
     # Schwendenmann + Mitchell 2014 for urban trees
     treedbh3<- treedbh2*100
@@ -63,3 +66,11 @@ treedbh2[treedbh2 <0]<-0
 trees$kgc <- kgc
 return(trees)
 }
+
+
+
+# Beets general multi-species equation from another source?
+# treedbh3<- (treedbh2*100)
+# kgc <- (0.0023 * treedbh3^3.3885 +
+#           0.0121 * treedbh3^2.5276 +
+#           0.009 * treedbh2^2.4966)
