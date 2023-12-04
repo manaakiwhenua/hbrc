@@ -18,7 +18,7 @@ devtools::install_github("manaakiwhenua/hbrc")
 ```
 
 The installation hinges on having a relatively up-to-date version of R, as well as all the requisites for the devtools package.
-To use this software you will also need the whitebox, terra, insol, and rayshader packages installed. Insol is not currently available through CRAN, but can be installed from the historical archived versions or from Github [here](https://github.com/cran/insol/tree/master). 
+To use this software you will also need the whitebox, terra, insol, and rayshader packages installed. Insol is not currently available through CRAN, but can be installed from the historical archived versions or from Github [here](https://github.com/cran/insol/). 
 
 ## Tutorial
 The hbrc package includes some test datasets from a small region near Wairoa. A more detailed explanation of the functions and the ecosystem service models that underlie them is included in the package [Introduction](https://github.com/manaakiwhenua/hbrc/blob/master/intro-hbrc-v3.pdf). This document also includes some caveats and limitations of the models, references, and an example of quantitatively considering uncertainty when modelling ecosystem services.
