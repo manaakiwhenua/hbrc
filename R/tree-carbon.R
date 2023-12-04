@@ -40,12 +40,12 @@ treedbh2 <- 10^((log10(treeheight)*hdmodel$estimates[2]) +hdmodel$estimates[1])
   # Logic checks
 treedbh2[treedbh2 <0]<-0
 
-treedbh2b<-treedbh2*100
+treedbh2b<-treedbh2*100 #treedbh2b is dbh in cm
 
   if(method=="beets"){
     # Beets general multi-species equation
-    treedbh3<- (treedbh2*100)*treeheight
-    kgc <- (4.83e-5 * treedbh3^0.978 +
+    treedbh3<- (treedbh2*100)*treeheight #treedbh3 is dbh*h
+    kgc <- (#4.83e-5 * treedbh3^0.978 +
                        1.62e-2 * treedbh3^0.943 +
                        1.75e-2 * treedbh2b^2.2 +
               1.71e-2 * treedbh2b^1.75)
