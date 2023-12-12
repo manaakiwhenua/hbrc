@@ -8,7 +8,7 @@
 #' @param resc Rescaling factor for reducing resolution. Integer or NA if no aggregation required.
 #' @param subs Number of regularly-spaced locations to calculate viewshed from. 120 takes approximately 10 minutes on a normal laptop, so be careful.
 #' @param ltb Lookup table as matrix with two columns. First column must include all categories of land cover included in lcm. Second column indicates land covers that contribute to landscape attractiveness, indicated by a 1.
-#' @return A SpatRaster stack including three layers; lascore = landscape aesthetics score within the viewshed, vsarea = viewshed area, combinedscore = multiplicative landscape aesthetic score.
+#' @return A list of two items. First is a SpatRaster stack including three layers; lascore = landscape aesthetics score within the viewshed, vsarea = viewshed area, combinedscore = multiplicative landscape aesthetic score. Second item in the list is a SpatVector of points including the same information.
 #' @export
 
 # Write function
@@ -121,5 +121,5 @@ laras2 <- c(lascore, vsarea, combinedscore)
 names(laras2)<-c("lascore", "vsarea", "combinedscore")
 
   # Return output
-return(laras2)
+return(list(laras2, lpts))
 }
