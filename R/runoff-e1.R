@@ -28,12 +28,13 @@ hbrc.runoff.e1 <- function(lcm,
                             cbind(ltb[,1], ltb[,4])))
 
   # Select correct layer from hsg
-  #cnmap<- app(c(hsg, cnmap),
-  #   fun = function(x){x[2:5][x[1]]})
+  rcmap2<- app(c(hsg, cnmap),
+     fun = function(x){x[2:4][x[1]]})
 
-  rcmap2 <- rcmap[[1]] # note that this is quicker than the more elegant way using app
-  rcmap2[stm==2]<- rcmap[[2]][stm==2]
-  rcmap2[stm==3]<- rcmap[[3]][stm==3]
+  # This method is not working as of 13-12-2023, so we go to the slower app method
+  #rcmap2 <- rcmap[[1]] # note that this is quicker than the more elegant way using app
+ # rcmap2[stm==2]<- rcmap[[2]][stm==2]
+ # rcmap2[stm==3]<- rcmap[[3]][stm==3]
 rm(rcmap)
 
 # Slope adjustment factor

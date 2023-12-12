@@ -28,13 +28,14 @@ hbrc.runoff.cn <- function(lcm,
                     cbind(ltb[,1], ltb[,5])))
 
   # Select correct layer from hsg
-  #cnmap<- app(c(hsg, cnmap),
-   #   fun = function(x){x[2:5][x[1]]})
+  cnmap<- app(c(hsg, cnmap),
+      fun = function(x){x[2:5][x[1]]})
 
-  cnmap2 <- cnmap[[1]] # note that this is quicker than the more elegant way using app
-  cnmap2[hsg==2]<- cnmap[[2]][hsg==2]
-  cnmap2[hsg==3]<- cnmap[[3]][hsg==3]
-  cnmap2[hsg==4]<- cnmap[[4]][hsg==4]
+  # This method is not working as of 13-12-2023, so we go to the slower app method
+  #cnmap2 <- cnmap[[1]] # note that this is quicker than the more elegant way using app
+  #cnmap2[hsg==2]<- cnmap[[2]][hsg==2]
+  #cnmap2[hsg==3]<- cnmap[[3]][hsg==3]
+  #cnmap2[hsg==4]<- cnmap[[4]][hsg==4]
 
   # antecedent conversion
   if(antecedent == "average"){
