@@ -28,7 +28,7 @@ hbrc.runoff.cn <- function(lcm,
                     cbind(ltb[,1], ltb[,5])))
 
   # Select correct layer from hsg
-  cnmap<- app(c(hsg, cnmap),
+  cnmap2<- app(c(hsg, cnmap),
       fun = function(x){x[2:5][x[1]]})
 
   # This method is not working as of 13-12-2023, so we go to the slower app method
