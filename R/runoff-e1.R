@@ -27,8 +27,8 @@ hbrc.runoff.e1 <- function(lcm,
             terra::classify(lcm,
                             cbind(ltb[,1], ltb[,4])))
 
-  # Select correct layer from hsg
-  rcmap2<- app(c(hsg, cnmap),
+  # Select correct layer from stm
+  rcmap2<- app(c(stm, rcmap),
      fun = function(x){x[2:4][x[1]]})
 
   # This method is not working as of 13-12-2023, so we go to the slower app method
