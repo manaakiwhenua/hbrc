@@ -23,6 +23,8 @@ To use this software you will also need the whitebox, terra, insol, and rayshade
 ## Tutorial
 The hbrc package includes some test datasets from a small region near Wairoa. A more detailed explanation of the functions and the ecosystem service models that underlie them is included in the package [Introduction](https://github.com/manaakiwhenua/hbrc/blob/master/intro-hbrc-v3.pdf). This document also includes some caveats and limitations of the models, references, and an example of quantitatively considering uncertainty when modelling ecosystem services.
 
+To run the examples included in this tutorial file, you will need to download our pre-prepared test dataset. The maps for the case study area are available for download from a Figshare repository, which can be accessed [here](https://figshare.com/articles/dataset/hbrc_R_package_test_data_files/24784164). Please download all the files and save them somewhere on your computer.
+
 ## Acknowledgements
 The work was partially supported by the Strategic Science Investment Funding for Crown Research Institutes from the New Zealand Ministry of Business, Innovation and Employment’s Science and Innovation Group. This work was also supported by the Environmental Science section of Hawke's Bay Regional Council via the LiDAR tools partnership project Contract Number HBRC-22-716.
 
