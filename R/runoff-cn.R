@@ -52,7 +52,7 @@ cnmap2 <- (4.2*cnmap2)/(10- (0.058*cnmap2))
 
   # if precip is less than (0.2*S), then no retention
   nor<-precip < S*0.2
-  Q[nor == 1]<-1
+  Q[nor == 1]<-0
 
   # convert from runoff to retained
   Retained<- 1-Q
